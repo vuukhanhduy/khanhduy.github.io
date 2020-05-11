@@ -1,0 +1,9 @@
+$(document).ready(function(){
+      $(".login-box-text").hide();
+});
+$(document).ready(function(){
+    $(".btn-reset").click(function(){
+      $(".forgot-hide").hide();
+      $(".login-box-text").show();
+    });
+});

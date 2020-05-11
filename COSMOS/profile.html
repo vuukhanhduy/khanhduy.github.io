@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Trang Chủ COSMOS</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/edit.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+     </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+              <!-- navbar -->
+              <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand logo" href="index.html"><img src="./image/logo-COSMOS.png"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="nav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold px-3" href="#">CTF Event</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold px-3" href="#">Security News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold px-3" href="#">Security Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold px-3" href="#">Github Project</a>
+                    </li>
+                    <li>
+                      <form class="form-inline ml-3">
+                        <div class="input-group">
+                          <input type="text" class="form-control " placeholder="Search" >
+                          <button type="submit" class="button-search"><img src="./image/search.png" alt="searching-icon" class="icon-search"></button>
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                  <div class="header-right row">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./image/example.jpeg" class="avatar">
+                        Khánh Duy
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <a href="profile.html" class="dropdown-item" type="button">Profile</a>
+                        <button class="dropdown-item button-favorite" type="button">Favorite</button>
+                        <button class="dropdown-item btn-logout" type="button">Log out</button>
+                      </div>
+                    </div>  
+                  </div>
+              </nav>              
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="bg-color">
+          <div class="container-fluid row">
+            <sidebar class="col-4">
+              <div class="info">
+                <h1>Intro</h1>
+                <div class="name row">
+                  <p class="col-3">Name</p>
+                  <p class="col-9">Vưu Khánh Duy</p>
+                </div> 
+                <div class="date row">
+                  <p class="col-3">DoB</p>
+                  <p class="col-9">31/10/1999</p>
+                </div>
+                <div class="mail row">
+                  <p class="col-3">Email</p>
+                  <p class="col-9">vuukhanhduy31101999@gmail.com</p>
+                </div>
+                <div class="phone-number row">
+                  <p class="col-3">Phone</p>
+                  <p class="col-9">0344734350</p>
+                </div>
+                <div class="address row">
+                  <p class="col-3">Address</p>
+                  <p class="col-9">Trường Đại học Công Nghệ Thông Tin -DHQG TpHCM</p>
+                </div>
+                <div class="gender row">
+                  <p class="col-3">Gender</p>
+                  <p class="col-9">Male</p>
+                </div>
+                <div class="desc row">
+                  <p class="col-3">Description</p>
+                  <p class="col-9">Vài đều nhảm nhí tại đây</p>
+                </div>
+                <a href="edit.html">Edit Profile</a>
+              </div>
+            </sidebar>
+            <article class="col-8">
+              <div class="create-post">
+                <h1>Create POST</h1>
+                <div>
+                  <form>
+                    <div class="form-group">
+                      <textarea class="form-control">
+                      
+                      </textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="file">
+                    </div>
+                  </form>
+                  <button class="btn btn-primary">POST</button>
+                </div>
+              </div>      
+              <!-- POST -->
+              <h1 class="title"> POST</h1>
+              <div class="post">
+                <div class="container">
+                    <p class="username">Khánh Duy</p>
+                    <p class="inline">-</p>
+                    <p class="time">8 giờ trước</p>  
+                    <h1 class="title-post">Link web link hay</h1>
+                    <p class="lead">Nội dung được ghi tại đây</p>
+                  <img src="./image/example.jpeg" alt="1">
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="container">
+                      <p class="username">Khánh Duy</p>
+                      <p class="inline">-</p>
+                      <p class="time">8 giờ trước</p>  
+                      <h1 class="title-post">Link web link hay</h1>
+                      <p class="lead">Nội dung được ghi tại đây</p>
+                    <img src="./image/example.jpeg" alt="1">
+                    </div>
+                  </div>
+                  <div class="post">
+                    <div class="container">
+                        <p class="username">Khánh Duy</p>
+                        <p class="inline">-</p>
+                        <p class="time">8 giờ trước</p>  
+                        <h1 class="title-post">Link web link hay</h1>
+                        <p class="lead">Nội dung được ghi tại đây</p>
+                      <img src="./image/example.jpeg" alt="1">
+                      </div>
+                    </div>
+            </article>
+          </div>
+       </section>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container-fluid row">
+            <div class="footer-left col footer-item">
+                <h3 class="title">Giới thiệu</h3>
+                <p  class="lead title-text">Website chủ yếu để chia sẻ các link hay cho người dùng cùng chia sẽ link</p>
+            </div>
+            <div class="footer col footer-item">
+              <h3 class="title">Liên hệ<h3>
+              <p class="lead title-text">Vưu Khánh Duy</p>
+              <p class="lead title-text">Trần Bảo Sam</p>
+              <p class="lead title-text">Võ Văn Minh</p>
+              <p class="lead title-text">Hồ Đăng Trung</p>
+            </div>
+            <div class="footer-right col footer-item">
+                <h3 class="title">NT208-K21-ANTT</h3>
+                <p  class="lead title-text">Lớp lập trình ứng dụng web</p>
+                <p  class="lead title-text">Giáo viên hướng dẫn: Trần Tuấn Dũng</p>
+                <div class="icon-contact title-text">
+                  <a href="https://dungtran.top/"><img src="./image/website.png" class="icon"></a>
+                  <a href="#"><img src="./image/facebook.png" class="icon"></a>
+                  <a href="#"><img src="./image/twitter.png" class="icon"></a>
+                </div>
+            </div>
+          </div>
+        </footer>
+       <div class="copy-right text-center container-fluid">
+         <div>
+           <hr>
+          <p class="coppy-right-text">COSMOS &copy; 2020 <a href="index.html" class="coppy-right-link">COSMOS.tk</a></p>
+         </div>        
+    </body>
+</html>

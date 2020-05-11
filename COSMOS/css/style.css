@@ -1,0 +1,201 @@
+/* create Gilroy Light font */
+@font-face{
+    src: url(../font/Gilroy/Gilroy-Light.ttf);
+    font-family: "Gilroy-Light";
+    font-weight:normal; 
+    font-style:normal;
+}
+
+@font-face{
+    src: url(../font/Roboto/Roboto-Light.ttf);
+    font-family: "Roboto";
+    font-weight:normal; 
+    font-style:normal;
+}
+header{
+    font-family: "Gilroy-Light";
+    font-size: 16px;
+}
+
+section,footer {
+    font-family: "Roboto";
+    font-size: 16px;
+}
+/* icon */
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+.icon-search {
+    height: 30px;
+    width: 30px;
+}
+
+.button-search{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #ccffcc;
+}
+.icon-top-user{
+    height: 30px;
+    width: 30px;
+}
+/* nav */
+
+/* Header*/
+.sign-in:hover{
+    text-decoration: none;
+    color: red;
+}
+.sign-up:hover{
+    text-decoration: none;
+    color: red;
+}
+/* Main*/
+/* Popular post */
+.menu-bar{
+    margin-left: 30px;
+}
+
+.menu-bar-item{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.menu-bar-item a{
+    color:black;
+    font-weight: bolder;
+}
+
+.menu-bar-item a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+/* Main-POST*/
+/* Top trending */
+.top-trending{
+    background-color: white;
+    padding-top:10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.top-trend-img{
+    width: 700px;
+    height: 350px;
+}
+.page-content, .copy-right, footer{
+    background-color: #f2f2f2;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bolder;
+    margin:20px;
+}
+
+.popular-post{
+    margin-top: 30px;
+}
+
+#demo{
+    text-align: center;
+}
+/* POST */
+.username{
+    display: inline;
+}
+
+.time{
+    display: inline;
+}
+
+.post{
+    border-radius: 17px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+/* Top user */
+.inline{
+    display: inline;
+}
+
+.title-top-user{
+    margin-top:50px;
+}
+
+.user{
+    margin-left:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 0 5px 0;
+}
+
+.user1{
+    padding-top:10px;
+}
+
+.user3{
+    padding-bottom: 10px;
+}
+
+.user img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.user p{
+    display: inline;
+}
+
+.top-user{
+    background-color: white;
+    margin-top:20px;
+    border-radius: 7%;
+    width: 70%;
+}
+/* FOOTER */
+
+.footer-item{
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Coppy Right */
+.copy-right{
+    padding: 10px;
+}
+
+hr {
+    background: red;
+    width: 90%;
+}
+
+.coppy-right-link{
+    color: red;
+    font-weight: bolder;
+}
+
+.coppy-right-link:hover{
+    text-decoration: none;
+    color: purple;
+}
+
+.title-text{
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* after-login */
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

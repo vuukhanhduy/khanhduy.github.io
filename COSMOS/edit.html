@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Edit Profile COSMOS</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/edit.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+              <!-- navbar -->
+              <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand logo" href="index.html"><img src="./image/logo-COSMOS.png"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="nav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold px-3" href="#">CTF Event</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold px-3" href="#">Security News</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold px-3" href="#">Security Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold px-3" href="#">Github Project</a>
+                    </li>
+                    <li>
+                      <form class="form-inline ml-3">
+                        <div class="input-group">
+                          <input type="text" class="form-control " placeholder="Search" >
+                          <button type="submit" class="button-search"><img src="./image/search.png" alt="searching-icon" class="icon-search"></button>
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                  <div class="header-right row">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./image/example.jpeg" class="avatar">
+                        Khánh Duy
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <a href="profile.html" class="dropdown-item" type="button">Profile</a>
+                        <button class="dropdown-item" type="button">Favorite</button>
+                        <button class="dropdown-item" type="button">Log out</button>
+                      </div>
+                    </div>  
+                  </div>
+              </nav>              
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="bg-color">
+            <form class="edit-form">
+              <h1 class="title text-center">Edit profile</h1>
+              <div class="form-group">
+                  <p class="title-text">Full Name</p>
+                  <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="title-text">Email Address</label>
+                    <i class="far fa-envelope lightgray"></i>
+                    <input type="email" name="email" placeholder="vuukhanhduy@gmail.com" disabled class="form-control">
+                </div>
+                <div class="form-group">
+                    <p class="title-text">Phone Number</p>
+                    <i></i>
+                    <input type="text" name="phone-number" placeholder="Phone Number" class="form-control">
+                </div>
+                <div class="form-group">
+                    <p class="title-text">Address</p>
+                    <i></i>
+                    <input type="text" name="address" placeholder="Address" class="form-control">
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label class="title-text">Gender</label>
+                    </div>
+                    <div class="form-check radio-item">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Male
+                      </label>
+                    </div>
+                    <div class="form-check radio-item">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Female
+                    </label>
+                    </div>
+                    <div class="form-check radio-item">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Orther
+                    </label>
+                    </div>
+                    <div>
+                      <p class="title-text">Description</p>
+                      <textarea class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Submit</button>   
+          </form>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container-fluid row">
+            <div class="footer-left col footer-item">
+                <h3 class="title">Giới thiệu</h3>
+                <p  class="lead title-text">Website chủ yếu để chia sẻ các link hay cho người dùng cùng chia sẽ link</p>
+            </div>
+            <div class="footer col footer-item">
+              <h3 class="title">Liên hệ<h3>
+              <p class="lead title-text">Vưu Khánh Duy</p>
+              <p class="lead title-text">Trần Bảo Sam</p>
+              <p class="lead title-text">Võ Văn Minh</p>
+              <p class="lead title-text">Hồ Đăng Trung</p>
+            </div>
+            <div class="footer-right col footer-item">
+                <h3 class="title">NT208-K21-ANTT</h3>
+                <p  class="lead title-text">Lớp lập trình ứng dụng web</p>
+                <p  class="lead title-text">Giáo viên hướng dẫn: Trần Tuấn Dũng</p>
+                <div class="icon-contact title-text">
+                  <a href="https://dungtran.top/"><img src="./image/website.png" class="icon"></a>
+                  <a href="https://www.facebook.com/dungtran"><img src="./image/facebook.png" class="icon"></a>
+                  <a href="https://twitter.com/flyloving"><img src="./image/twitter.png" class="icon"></a>
+                </div>
+            </div>
+          </div>
+        </footer>
+       <div class="copy-right text-center container-fluid">
+         <div>
+           <hr>
+          <p class="coppy-right-text">COSMOS &copy; 2020 <a href="index.html" class="coppy-right-link">COSMOS.tk</a></p>
+         </div>
+    </body>
+</html>
